@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZachQL.QueryEngine", "ZachQL.QueryEngine\ZachQL.QueryEngine.csproj", "{72C2AC08-2193-4C8D-B053-07BE9069E9E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZachQL.StorageEngine", "ZachQL.StorageEngine\ZachQL.StorageEngine.csproj", "{3E89F0C6-12E7-4BAC-9547-556A2B97A642}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{078407FD-8628-40F8-A106-73F879826B74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{078407FD-8628-40F8-A106-73F879826B74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{078407FD-8628-40F8-A106-73F879826B74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{078407FD-8628-40F8-A106-73F879826B74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DF284B7-CE24-48D1-AD8C-53E0483BB875}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DF284B7-CE24-48D1-AD8C-53E0483BB875}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DF284B7-CE24-48D1-AD8C-53E0483BB875}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DF284B7-CE24-48D1-AD8C-53E0483BB875}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72C2AC08-2193-4C8D-B053-07BE9069E9E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72C2AC08-2193-4C8D-B053-07BE9069E9E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72C2AC08-2193-4C8D-B053-07BE9069E9E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72C2AC08-2193-4C8D-B053-07BE9069E9E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E89F0C6-12E7-4BAC-9547-556A2B97A642}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E89F0C6-12E7-4BAC-9547-556A2B97A642}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E89F0C6-12E7-4BAC-9547-556A2B97A642}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E89F0C6-12E7-4BAC-9547-556A2B97A642}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
