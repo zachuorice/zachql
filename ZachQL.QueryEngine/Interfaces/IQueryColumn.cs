@@ -1,5 +1,5 @@
 namespace ZachQL.QueryEngine.Interfaces;
 
-interface IQueryColumn {
+interface IQueryColumn : ISubQueryable {
 
 }

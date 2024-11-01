@@ -10,7 +10,10 @@ interface IQuery {
     public IQuery where( IQueryClause[] clauses );
     public IQuery orderBy( IQueryColumn[] columns );
     public IQuery groupBy( IQueryColumn[] columns );
-    public IQuery having( IQueryClause[] columns );
+    public IQuery having( IQueryClause[] clauses );
+
+    public IQuery insert( IQueryColumn[] columns, IQueryValue[] values );
+    public IQuery update( IQueryColumn[] columns, IQueryValue[] values, IQueryClause[] clauses );
 
     public IQueryResult execute();
 }

@@ -1,4 +1,4 @@
 namespace ZachQL.QueryEngine.Interfaces;
 
-interface IQueryTable {
+interface IQueryTable : ISubQueryable {
 }
