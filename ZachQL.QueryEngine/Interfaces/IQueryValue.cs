@@ -21,7 +21,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 namespace ZachQL.QueryEngine.Interfaces;
 
 // Goals:
-// - Support C# data type, leave transformation to binary up to the StorageEngine.
+// - Support C# data types, leave transformation to binary up to the StorageEngine.
 // - Support being defined through a subquery (?)
 interface IQueryValue : ISubQueryable {
+    public ITypedValue<T> GetValue<T>();
+    public void SetValue<T>(ITypedValue<T> value);
 }

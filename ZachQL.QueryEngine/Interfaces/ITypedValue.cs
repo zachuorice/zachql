@@ -20,6 +20,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 namespace ZachQL.QueryEngine.Interfaces;
 
-interface IQueryClause : ISubQueryable {
-    public bool passes();
+interface ITypedValue<T> {
+    T GetValue();
+    T SetValue(T value);
+    uint GetLength();
+    void SetLength(uint length);
 }

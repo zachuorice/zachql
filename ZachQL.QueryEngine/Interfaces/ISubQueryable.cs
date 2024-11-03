@@ -21,8 +21,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 using ZachQL.QueryEngine.Interfaces;
 
 // Classes implementing this are expected to support subqueries, 
-// and will be responsible for handling the subquery appropriately for their semantics.
+// and will be responsible for handling the subquery appropriately for their position in the query.
 interface ISubQueryable {
-    protected IQuery getSubquery();
-    protected bool hasSubquery();
+    protected IQuery GetSubquery();
+    protected bool HasSubquery();
 }
