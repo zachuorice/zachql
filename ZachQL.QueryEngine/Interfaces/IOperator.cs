@@ -20,6 +20,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 namespace ZachQL.QueryEngine.Interfaces;
 
-interface IOperator<T> {
+public interface IOperator<T> {
     public bool passes(T v1, T v2);
 }

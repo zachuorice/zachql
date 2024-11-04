@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZachQL.QueryEngine", "ZachQ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZachQL.StorageEngine", "ZachQL.StorageEngine\ZachQL.StorageEngine.csproj", "{3E89F0C6-12E7-4BAC-9547-556A2B97A642}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZachQL.QueryEngine.v1", "ZachQL.QueryEngine.v1\ZachQL.QueryEngine.v1.csproj", "{93C1117E-D64E-45FA-B9B4-D6CBA7112DA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZachQL.QueryEngine.Tests", "ZachQL.QueryEngine.Tests\ZachQL.QueryEngine.Tests.csproj", "{3D734A00-5C1D-4166-B56C-5A100106EFA7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,5 +36,13 @@ Global
 		{3E89F0C6-12E7-4BAC-9547-556A2B97A642}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E89F0C6-12E7-4BAC-9547-556A2B97A642}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E89F0C6-12E7-4BAC-9547-556A2B97A642}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93C1117E-D64E-45FA-B9B4-D6CBA7112DA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93C1117E-D64E-45FA-B9B4-D6CBA7112DA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93C1117E-D64E-45FA-B9B4-D6CBA7112DA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93C1117E-D64E-45FA-B9B4-D6CBA7112DA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D734A00-5C1D-4166-B56C-5A100106EFA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D734A00-5C1D-4166-B56C-5A100106EFA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D734A00-5C1D-4166-B56C-5A100106EFA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D734A00-5C1D-4166-B56C-5A100106EFA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

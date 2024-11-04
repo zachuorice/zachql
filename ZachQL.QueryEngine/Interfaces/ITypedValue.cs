@@ -20,7 +20,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 namespace ZachQL.QueryEngine.Interfaces;
 
-interface ITypedValue<T> {
+public interface ITypedValue<T> {
     T GetValue();
     T SetValue(T value);
     uint GetLength();

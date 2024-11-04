@@ -24,16 +24,17 @@ namespace ZachQL.QueryEngine.Interfaces;
  *   A naive interface for querying against our database. 
  *   The goal of this interface is to model SQL queries, ideally our lexer / parser will eventually use this.
  */
-interface IQuery {
+public interface IQuery {
     public IQuery Select( IQueryColumn[] columns );
     public IQuery From( IQueryTable[] databases );
     public IQuery Where( IQueryClause[] clauses );
     public IQuery OrderBy( IQueryColumn[] columns );
     public IQuery GroupBy( IQueryColumn[] columns );
     public IQuery Having( IQueryClause[] clauses );
+    public IQuery Limit( uint count );
+    public IQuery Offset( uint count );
 
-    public IQuery Insert( IQueryColumn[] columns, IQueryValue[] values );
-    public IQuery Update( IQueryColumn[] columns, IQueryValue[] values, IQueryClause[] clauses );
-
-    public IQueryResult Execute();
+    public IQuery Insert( IQueryTable table, IQueryRow values );
+    public IQuery Update( IQueryTable table, IQueryRow values, IQueryClause[] clauses );
+    public IQuery Delete( IQueryTable table, IQueryClause[] clauses );
 }

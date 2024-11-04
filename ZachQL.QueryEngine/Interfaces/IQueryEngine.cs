@@ -20,6 +20,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 namespace ZachQL.QueryEngine.Interfaces;
 
-public interface IQueryRow {
-    public IQueryColumnValue[] GetColumnValues();
+public interface IQueryEngine {
+    public IQueryResult Execute(IQuery query);
 }

@@ -18,8 +18,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 */
 
-namespace ZachQL.QueryEngine.Interfaces;
+namespace ZachQL.StorageEngine.Interfaces;
 
-public interface IQueryRow {
-    public IQueryColumnValue[] GetColumnValues();
+public interface IStorageEngine {
 }

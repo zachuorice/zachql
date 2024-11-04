@@ -18,8 +18,26 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 */
 
-namespace ZachQL.QueryEngine.Interfaces;
+using ZachQL.QueryEngine.Interfaces;
+using ZachQL.StorageEngine.Interfaces;
 
-public interface IQueryRow {
-    public IQueryColumnValue[] GetColumnValues();
+namespace ZachQL.QueryEngine.v1.Classes;
+
+class QueryEngine : IQueryEngine {
+    private class InternalQuery : Query {
+        public IQueryResult Execute(QueryEngine engine) {
+            // ...
+        }
+    } 
+
+    private readonly IStorageEngine _storageEngine;
+    public QueryEngine(IStorageEngine storageEngine) {
+        this._storageEngine = storageEngine;
+    }
+
+    public IQueryResult Execute(Query query) {
+        // Not sure if this works - or is good practice.
+        InternalQuery realQuery = (InternalQuery ) query;
+        return realQuery.Execute(this);
+    }
 }
